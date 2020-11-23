@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --blue: #10152c;
+    --white: #ffffff;
+    --yellow: #fdbf14;
+}
+a:visited{
+    color: #fff;
+}
+p{
+    font-size: 18px;
+}
+h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+body{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #f2f5f8;
+}
+span{
+    color: var(--yellow);
+}
+
+/* nav styles */
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: var(--blue);
+    /* display: inline; */
+}
+.logo-con{
+    max-width: 150px;
+    /* padding: 10px 0; */
+    float: left;
+}
+.logo{
+    max-width: 150px;
+    padding: 10px 0;
+}
+.nav-list{
+    float: right;
+    padding-top: 20px;
+}
+.nav-list li{
+    display: inline;
+    list-style-type: none;
+}
+.nav-list li a{
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 30px;
+}
+.nav-list li a:hover{
+    color: var(--yellow);
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 20px;
+    transition: all ease 0.5s;
+}
+/* nav styles ends */
+
+/* projects */
+.projects{
+    margin-top: 150px;
+}
+.projects-title{
+    text-align: center;
+}
+.projects-title h1{
+    font-size: 52px;
+    font-weight: 700;
+    animation: blink normal 5s infinite ease-in-out;
+}
+.projects-title img{
+    width: 100px;
+    animation: blink normal 5s infinite ease-in-out;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
