@@ -169,7 +169,7 @@ nav{
 	border-top-color: var(--yellow);
 	border-radius: 50%;
     animation: loadingspin 1s linear infinite;
-    margin: 20% auto;
+    margin: 5% auto;
 }
 
 @keyframes loadingspin {
