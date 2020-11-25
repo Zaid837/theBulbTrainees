@@ -13,8 +13,8 @@ const getUsers = () => {
     .then((res) => res.json())
     .then((user) => {
       fellows.push(user)
-      fellows.forEach((fellow) =>)
-      //console.log(fellows)
+      fellows.forEach((fellow) =>fellows.push(fellow))
+      console.log(fellows)
     });
 };
 getUsers();
