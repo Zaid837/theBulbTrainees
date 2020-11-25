@@ -159,3 +159,22 @@ nav{
         margin-bottom: 10%;
     }
 }
+
+.spinner {
+	pointer-events: none;
+	width: 20rem;
+	height: 20rem;
+	border: 0.4em solid transparent;
+	border-color: #eee;
+	border-top-color: var(--yellow);
+	border-radius: 50%;
+    animation: loadingspin 1s linear infinite;
+    margin: 20% auto;
+}
+
+@keyframes loadingspin {
+	100% {
+			transform: rotate(360deg)
+	}
+}
+  
