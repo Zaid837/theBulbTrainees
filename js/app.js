@@ -40,7 +40,7 @@ const displayUsers = (fellows) => {
   fellows.forEach((fellow, i) => {
     trainees.innerHTML += `
         <div class="trainee" onclick="openModal(${i + 1})">
-          <img src=${fellow.avatar} alt="avi" class="profile">
+          <img src= ${fellow.avatar} alt="avi" class="profile">
           <p>${fellow.name}</p>
          </div>
         `;
@@ -58,12 +58,11 @@ const displayUser = (user) => {
       <button class="close" onclick="closeModal()">&times;</button>
       <div class="modal-info pt-5">
           <h3 class="name">${user.name}</h3>
-          <p class="bio">${user.bio}
-          </p>
-          <p class="stack">Stack : ${user.stack}</p>
-          <p class="benefits">What you hope to gain from the bulb training :</p>
-          <p class="socials">social links</p>
+          <p class="bio">${user.bio}</p>
+          <p class="stack">Stack: ${user.stack}</p>
+          <p class="benefits">What you hope to gain from the bulb training: ${user.expectation}</p>
+          <p class="socials">Social Links:</p>
       </div>
-  </div>`;
+  </div>`
 };
 getUsers();
