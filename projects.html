@@ -14,14 +14,20 @@
     <!-- font family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- js -->
-    <script src="/js/app.js"></script>
+    
 </head>
 <body>
 
     <!-- Navbar -->
     <nav>
         <div class="container">
+            <div class="toggle" onclick="toggleMenu()">
+                <div class="menu" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
             <a href="/index.html" class="logo-con"><img src="./images/logo.png" class="logo" alt=""></a>
             <ul class="nav-list">
                 <li><a href="/index.html">About</a></li>
@@ -44,7 +50,8 @@
         </div>
     </div>
 
-
+    <!-- js -->
+    <script src="/js/app.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
