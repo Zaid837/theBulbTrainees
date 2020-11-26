@@ -25,7 +25,7 @@ body{
 
 /* nav styles */
 nav{
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: var(--blue);
     /* display: inline; */
@@ -51,6 +51,7 @@ nav{
     color: var(--white);
     text-decoration: none;
     margin-left: 30px;
+    margin-top: 5px;
 }
 .nav-list li a:hover{
     color: var(--yellow);
