@@ -1,6 +1,6 @@
 let trainee = document.getElementById("trainee");
 const trainees = document.querySelector(".trainees");
-const spinner = document.querySelectorAll(".spinner");
+const spinner = document.querySelector(".spinner");
 const modalCon = document.querySelector(".modal-con");
 function openModal(i) {
   document.querySelector(".bg-modal").classList.toggle("open");
@@ -26,7 +26,7 @@ const getUsers = () => {
 };
 
 const displayUsers = fellows=>{
-    spinner[0].style.display = 'none'
+    spinner.style.display = 'none'
       fellows.forEach((fellow,i)=>{
         trainees.innerHTML +=`
         <div class="trainee" onclick="openModal(${i+1})">
