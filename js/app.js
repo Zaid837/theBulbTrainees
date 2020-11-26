@@ -1,9 +1,7 @@
-  let trainee = document.getElementById("trainee");
-  const trainees = document.querySelector(".trainees");
-  const spinner = document.querySelectorAll(".spinner");
-  const modalCon = document.querySelector(".modal-con");
-  const modalBackground = document.querySelector(".bg-modal");
-
+let trainee = document.getElementById("trainee");
+const trainees = document.querySelector(".trainees");
+const spinner = document.querySelector(".spinner");
+const modalCon = document.querySelector(".modal-con");
 function openModal(i) {
   document.querySelector(".bg-modal").classList.toggle("open");
   getUser(i);
@@ -33,11 +31,11 @@ const getUsers = () => {
     });
 };
 
-const displayUsers = (fellows) => {
-  spinner[0].style.display = "none";
-  fellows.forEach((fellow, i) => {
-    trainees.innerHTML += `
-        <div class="trainee" onclick="openModal(${i + 1})">
+const displayUsers = fellows=>{
+    spinner.style.display = 'none'
+      fellows.forEach((fellow,i)=>{
+        trainees.innerHTML +=`
+        <div class="trainee" onclick="openModal(${i+1})">
           <img src=${fellow.avatar} alt="avi" class="profile">
           <p>${fellow.name}</p>
          </div>
