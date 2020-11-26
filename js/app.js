@@ -2,20 +2,23 @@ let trainee = document.getElementById("trainee");
 const trainees = document.querySelector(".trainees");
 const spinner = document.querySelector(".spinner");
 const modalCon = document.querySelector(".modal-con");
+const modalBackground = document.querySelector(".bg-modal");
+
 function openModal(i) {
-  document.querySelector(".bg-modal").classList.toggle("open");
+  modalBackground.classList.toggle("open");
   getUser(i);
 }
 function closeModal() {
-  document.querySelector(".bg-modal").classList.toggle("open");
+  modalBackground.classList.toggle("open");
   modalCon.innerHTML = '<div class="spinner">';
 }
 
-modalBackground.addEventListener(("click"), e => {
+modalBackground.addEventListener("click", (e) => {
   if (e.path[0].classList.contains("open")) {
     closeModal();
   }
 });
+
 const getUser = (i) => {
   fetch(`https://5fbe19de5923c90016e6a815.mockapi.io/users/${i}`)
     .then((res) => res.json())
@@ -23,6 +26,7 @@ const getUser = (i) => {
       displayUser(user);
     });
 };
+
 const getUsers = () => {
   fetch("https://5fbe19de5923c90016e6a815.mockapi.io/users")
     .then((res) => res.json())
@@ -31,11 +35,11 @@ const getUsers = () => {
     });
 };
 
-const displayUsers = fellows=>{
-    spinner.style.display = 'none'
-      fellows.forEach((fellow,i)=>{
-        trainees.innerHTML +=`
-        <div class="trainee" onclick="openModal(${i+1})">
+const displayUsers = (fellows) => {
+  spinner.style.display = "none";
+  fellows.forEach((fellow, i) => {
+    trainees.innerHTML += `
+        <div class="trainee" onclick="openModal(${i + 1})">
           <img src=${fellow.avatar} alt="avi" class="profile">
           <p>${fellow.name}</p>
          </div>
@@ -51,8 +55,7 @@ const displayUser = (user) => {
       </div>
   </div>
   <div class="col-sm-8">
-      <button class="close close-btn" onclick="closeModal()">&times;</button>
-  
+      <button class="close" onclick="closeModal()">&times;</button>
       <div class="modal-info pt-5">
           <h3 class="name">${user.name}</h3>
           <p class="bio">${user.bio}
@@ -61,7 +64,6 @@ const displayUser = (user) => {
           <p class="benefits">What you hope to gain from the bulb training :</p>
           <p class="socials">social links</p>
       </div>
-  
   </div>`;
 };
 getUsers();
