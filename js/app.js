@@ -1,12 +1,6 @@
 function toggleMenu() {
-  var toggle = document.querySelector('toggle');
   var nav = document.querySelector('.nav-list')
-  
-
-
   nav.classList.toggle('nav-active');
-  // document.body.classList.add('newBg');
-  
 }
 
 function myFunction(x) {
