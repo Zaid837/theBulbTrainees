@@ -118,6 +118,7 @@ nav{
   height: 200px;
   vertical-align: middle;
   border-radius: 50%;
+  object-fit: cover;
 }
 /* modal */
 .bg-modal {
