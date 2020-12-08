@@ -149,14 +149,60 @@ nav{
 .modal-info {
   /* margin: 2%; */
   margin-top: 50px;
+  margin-right: 10px;
   padding: 20px;
   padding-top: 50px;
   height: 400px;
   overflow-y: scroll;
+  word-wrap: break-word;
 }
 .modal-info h3 {
   color: var(--yellow);
+  font-weight: 700;
 }
+.modal-info::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 5px;
+  height: 300px;
+}
+ 
+.modal-info::-webkit-scrollbar-track-piece:end {
+  margin-bottom: 10px;
+}
+ 
+.modal-info::-webkit-scrollbar-track-piece:start {
+  margin-top: 40px;
+}
+ 
+.modal-info::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+ 
+.modal-info::-webkit-scrollbar-thumb {
+  background: #a5a5a5;
+  border-radius: 10px;
+}
+ 
+.modal-info::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+}
+ 
+.modal-info::-webkit-scrollbar-thumb {
+  background: #a5a5a5;
+  border-radius: 10px;
+}
+ 
+.modal-info::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+ 
+.modal-info::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 5px;
+  height: 200px;
+}
+
 .close {
   position: absolute;
   left: 400px;

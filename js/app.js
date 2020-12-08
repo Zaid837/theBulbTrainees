@@ -71,7 +71,7 @@ const displayUser = (user) => {
       <div class="modal-info pt-5">
           <h3 class="name">${user.name}</h3>
           <p class="bio">${user.bio}</p>
-          <p class="stack">Stack: ${user.stack}</p>
+          <p class="stack">Stack: ${user.stack}jvbruvbruvbruvbuwrbvuiebuiebfcubfusbefbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
           <p class="benefits">What you hope to gain from the bulb training: ${user.expectation}</p>
           <p class="socials">Social Links:</p>
       </div>
