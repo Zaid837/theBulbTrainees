@@ -1,16 +1,13 @@
 function toggleMenu() {
-  var nav = document.querySelector('.nav-list')
-  nav.classList.toggle('nav-active');
+  var nav = document.querySelector(".nav-list");
+  nav.classList.toggle("nav-active");
 }
 
 function myFunction(x) {
   x.classList.toggle("change");
 }
 
-
-
-
-let trainee = document.getElementById("trainee");
+const trainee = document.getElementById("trainee");
 const trainees = document.querySelector(".trainees");
 const spinner = document.querySelector(".spinner");
 const modalCon = document.querySelector(".modal-con");
@@ -71,10 +68,10 @@ const displayUser = (user) => {
       <div class="modal-info pt-5">
           <h3 class="name">${user.name}</h3>
           <p class="bio">${user.bio}</p>
-          <p class="stack">Stack: ${user.stack}jvbruvbruvbruvbuwrbvuiebuiebfcubfusbefbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+          <p class="stack">Stack: ${user.stack}</p>
           <p class="benefits">What you hope to gain from the bulb training: ${user.expectation}</p>
           <p class="socials">Social Links:</p>
       </div>
-  </div>`
+  </div>`;
 };
 getUsers();
