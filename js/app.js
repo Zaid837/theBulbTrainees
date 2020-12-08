@@ -70,7 +70,7 @@ const displayUser = (user) => {
           <p class="bio">${user.bio}</p>
           <p class="stack">Stack: ${user.stack}</p>
           <p class="benefits">What you hope to gain from the bulb training: ${user.expectation}</p>
-          <p class="socials">Social Links:</p>
+          <p class="socials">Social Links:<a href="${user.social}"><i class="fab fa-linkedin"></i></a></p>
       </div>
   </div>`;
 };
