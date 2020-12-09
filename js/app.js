@@ -70,7 +70,11 @@ const displayUser = (user) => {
           <p class="bio">${user.bio}</p>
           <p class="stack">Stack: ${user.stack}</p>
           <p class="benefits">What you hope to gain from the bulb training: ${user.expectation}</p>
-          <p class="socials">Social Links:<a  target="blank" href="${user.social[0]}"><i class="fa fa-linkedin social"></i></a><a target="blank" href="${user.social[1]}"><i class="fa fa-github social"></i></a><a target="blank" href="mailto:${user.social[2]}"><i class="fa fa-envelope social"></i></a></p>
+          <p class="socials">Social Links: 
+             <a target="blank" href = "${user.social[0]}"><i class="fab fa-linkedin-in"></i></a>
+             <a target="blank" href = "${user.social[1]}" ><i class="fab fa-github"></i></a>
+             <a target="blank" href = "${user.social[2]}"><i class="fas fa-paper-plane"></i></a>
+          </p>
       </div>
   </div>`;
 };
