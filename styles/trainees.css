@@ -222,12 +222,11 @@ nav{
 .social{
   color: var(--blue);
   margin-left: 15px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .social:hover{
   color: var(--yellow);
 }
-
 
 /* footer section */
 footer {
