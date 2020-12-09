@@ -219,8 +219,14 @@ nav{
 .closed {
   display: none;
 }
-
-
+.social{
+  color: var(--blue);
+  margin-left: 15px;
+  font-size: 20px;
+}
+.social:hover{
+  color: var(--yellow);
+}
 
 /* footer section */
 footer {
@@ -272,9 +278,6 @@ label{
 @media (max-width: 767px){
   .modal-con{
     width: 450px;
-  }
-  .profile{
-
   }
 }
 @media (max-width: 700px){
