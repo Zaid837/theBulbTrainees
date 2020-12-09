@@ -224,9 +224,16 @@ nav{
   margin-left: 15px;
   font-size: 20px;
 }
-.social:hover{
+
+a{
+  margin-left:15px;
+}
+
+i:hover{
   color: var(--yellow);
 }
+
+
 
 /* footer section */
 footer {
