@@ -118,6 +118,7 @@ nav{
   height: 200px;
   vertical-align: middle;
   border-radius: 50%;
+  object-fit: cover;
 }
 /* modal */
 .bg-modal {
@@ -218,8 +219,14 @@ nav{
 .closed {
   display: none;
 }
-
-
+.social{
+  color: var(--blue);
+  margin-left: 15px;
+  font-size: 20px;
+}
+.social:hover{
+  color: var(--yellow);
+}
 
 /* footer section */
 footer {
