@@ -9,9 +9,15 @@ html{scroll-behavior: smooth;}
     --white: #ffffff;
     --yellow: #fdbf14;
 }
-a:visited{
-    color: #fff;
+
+a{
+    color: white !important;
 }
+
+a:visited{
+    color: #fff !important; 
+}
+
 p{
     font-size: 18px;
 }

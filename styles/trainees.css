@@ -207,33 +207,28 @@ nav{
 
 .close {
   position: absolute;
-  left: 400px;
+  left: 420px;
   font-size: 5em !important;
-  /* color: #fdbf14 !important; */
   outline: none; 
 }
+
 .open {
   display: grid;
   place-items: center;
 }
+
 .closed {
   display: none;
 }
-.social{
+.socials a{
   color: var(--blue);
   margin-left: 15px;
   font-size: 20px;
 }
 
-a{
-  margin-left:15px;
-}
-
 i:hover{
   color: var(--yellow);
 }
-
-
 
 /* footer section */
 footer {
@@ -254,7 +249,7 @@ footer {
 
 }
 .footer-item a{
-  color: #ccc;
+  color: white;
 }
 .footer-item a:hover{
   text-decoration: none;
@@ -320,8 +315,9 @@ label{
 /* modal */
   
 /* modal ends */
+
     /* footer */
-    .footer-items{
+.footer-items{
       padding: 30px 0px;
   }
   .footer-item{
