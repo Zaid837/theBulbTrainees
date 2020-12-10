@@ -17,6 +17,7 @@ function openModal(i) {
   modalBackground.classList.toggle("open");
   getUser(i);
 }
+
 function closeModal() {
   modalBackground.classList.toggle("open");
   modalCon.innerHTML = '<div class="spinner">';
