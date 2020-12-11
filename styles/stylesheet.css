@@ -133,7 +133,7 @@ span{
 /* why section */
 .why-section{
     background-color: #f2f5f8;
-    height: 700px;
+    /* height: 700px; */
 }
 .whyLearn{
     margin-top: 120px;
