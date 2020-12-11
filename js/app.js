@@ -58,14 +58,13 @@ const displayUsers = (fellows) => {
 };
 
 const displayUser = (user) => {
-  modalCon.innerHTML = `<div class="row mt-5">
-  <div class="col-sm-4">
+  modalCon.innerHTML = `
       <div class="modal-img">
           <img src=${user.avatar} alt="avi" class="profile">
       </div>
-  </div>
-  <div class="col-sm-8">
+
       <button class="close" onclick="closeModal()">&times;</button>
+      
       <div class="modal-info pt-5">
           <h3 class="name">${user.name}</h3>
           <p class="bio">${user.bio}</p>
@@ -76,7 +75,6 @@ const displayUser = (user) => {
              <a target="blank" href = "${user.social[1]}" ><i class="fab fa-github"></i></a>
              <a target="blank" href = "mailto:${user.social[2]}"><i class="fas fa-paper-plane"></i></a>
           </p>
-      </div>
-  </div>`;
+      </div>`;
 };
 getUsers();
