@@ -226,7 +226,6 @@ nav {
   display: grid;
   place-items: center;
 }
-
 .closed {
   display: none;
 }
