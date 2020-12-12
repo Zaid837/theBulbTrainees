@@ -286,9 +286,13 @@ label {
 /* media queries */
 @media (min-width: 768px) {
   .modal-info {
-    padding: 1em;
-    padding-top: 3em;
-    height: 350px;
+    padding: 5em 1em;
+    margin-right: 0;
+    padding-right: 3em;
+  }
+
+  .modal-info h3 {
+    margin-top: 0;
   }
 }
 @media (max-width: 700px) {
@@ -334,14 +338,14 @@ label {
 }
 
 @media only screen and (orientation: landscape) {
-  .modal-info{
+  .modal-info {
     padding: 1em;
     margin: 1em;
     height: 300px;
     padding-right: 1.5em;
   }
 
-  .modal-info h3{
+  .modal-info h3 {
     margin-top: 20px;
   }
 }
@@ -359,7 +363,7 @@ label {
     height: 90vh;
   }
   .modal-info {
-    padding-top: 0px;
+    /* padding-top: 0px; */
     margin: 1em;
     margin-top: 0;
   }
@@ -376,7 +380,7 @@ label {
 
 @media (max-width: 390px) {
   .modal-con {
-    width: 250px;
+    width: 300px;
   }
 }
 
