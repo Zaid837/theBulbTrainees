@@ -143,30 +143,30 @@ span {
 /* content area ends */
 
 /* why section */
-.why-section {
-  background-color: #f2f5f8;
-  height: 700px;
+.why-section{
+    background-color: #f2f5f8;
+    height: 700px;
 }
-.whyLearn {
-  margin-top: 120px;
+.whyLearn{
+    margin-top: 120px;
 }
-.whyLearn h2 {
-  font-size: 40px;
-  font-weight: 400;
+.whyLearn h2{
+    font-size: 40px;
+    font-weight: 400;
 }
-.cards {
-  margin-top: 50px;
+.cards{
+    margin-top: 50px;
 }
-.why-cards {
-  position: relative;
-  border-radius: 8.2px;
-  border: 0.5px solid hsla(0, 0%, 76.9%, 0.3);
-  padding: 41.82px 30.34px 23.78px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  margin-bottom: 24px;
-  cursor: pointer;
-  height: 250px;
-  transition: box-shadow 0.318s ease-out;
+.why-cards{
+    position: relative;
+    border-radius: 8.2px;
+    border: .5px solid hsla(0,0%,76.9%,.3);
+    padding: 41.82px 30.34px 23.78px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.05);
+    margin-bottom: 24px;
+    cursor: pointer;
+    height: 250px;
+    transition: box-shadow .318s ease-out;
 }
 .why-cards:hover {
   box-shadow: 0 4px 31px rgba(0, 0, 0, 0.18);
