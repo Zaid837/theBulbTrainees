@@ -162,7 +162,6 @@ nav {
 .modal-info {
   margin-right: 2em;
   padding: 1em;
-  padding-top: 50px;
   height: 400px;
   overflow-y: scroll;
   word-wrap: break-word;
@@ -285,9 +284,11 @@ label {
   border: none;
 }
 /* media queries */
-@media (max-width: 767px) {
-  .modal-con {
-    width: 500px;
+@media (min-width: 768px) {
+  .modal-info {
+    padding: 1em;
+    padding-top: 3em;
+    height: 350px;
   }
 }
 @media (max-width: 700px) {
@@ -299,7 +300,6 @@ label {
     top: 70px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     width: 100%;
     z-index: 1000;
@@ -319,9 +319,6 @@ label {
   .toggle {
     display: inline-block;
   }
-  /* modal */
-
-  /* modal ends */
 
   /* footer */
   .footer-items {
@@ -333,6 +330,19 @@ label {
   }
   .footer-item li {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .modal-info{
+    padding: 1em;
+    margin: 1em;
+    height: 300px;
+    padding-right: 1.5em;
+  }
+
+  .modal-info h3{
+    margin-top: 20px;
   }
 }
 
@@ -349,8 +359,13 @@ label {
     height: 90vh;
   }
   .modal-info {
-    padding-top: 0px ;
+    padding-top: 0px;
     margin: 1em;
+    margin-top: 0;
+  }
+
+  .modal-info h3 {
+    margin-top: 0;
   }
 
   .close {
