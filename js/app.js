@@ -45,6 +45,7 @@ const getUsers = () => {
     });
 };
 
+//*displays trainees on page load
 const displayUsers = (fellows) => {
   spinner.style.display = "none";
   fellows.forEach((fellow, i) => {
@@ -53,18 +54,17 @@ const displayUsers = (fellows) => {
           <img src= ${fellow.avatar} alt="avi" class="profile">
           <p>${fellow.name}</p>
          </div>
-        `;
+        `; 
   });
 };
 
+// displays profile on click
 const displayUser = (user) => {
   modalCon.innerHTML = `
       <div class="modal-img">
           <img src=${user.avatar} alt="avi" class="profile">
       </div>
-
       <button class="close" onclick="closeModal()">&times;</button>
-      
       <div class="modal-info pt-5">
           <h3 class="name">${user.name}</h3>
           <p class="bio">${user.bio}</p>
@@ -78,3 +78,4 @@ const displayUser = (user) => {
       </div>`;
 };
 getUsers();
+

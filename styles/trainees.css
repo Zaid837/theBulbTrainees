@@ -162,7 +162,8 @@ nav {
 .modal-info {
   margin-right: 2em;
   padding: 1em;
-  height: 400px;
+  padding-right: 2em;
+  height: auto;
   overflow-y: scroll;
   word-wrap: break-word;
 }
@@ -263,6 +264,7 @@ footer {
   color: #ccc;
   opacity: 0.6;
 }
+
 label {
   color: #fff;
 }
@@ -288,7 +290,7 @@ label {
   .modal-info {
     padding: 5em 1em;
     margin-right: 0;
-    padding-right: 3em;
+    /* padding-right: 3em; */
   }
 
   .modal-info h3 {
@@ -337,7 +339,7 @@ label {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 600px) {
   .modal-info {
     padding: 1em;
     margin: 1em;
@@ -363,7 +365,6 @@ label {
     height: 90vh;
   }
   .modal-info {
-    /* padding-top: 0px; */
     margin: 1em;
     margin-top: 0;
   }
