@@ -163,7 +163,7 @@ nav {
 .modal-info {
   margin-right: 2em;
   padding: 1em;
-  height: 400px;
+  height: auto;
   overflow-y: scroll;
   word-wrap: break-word;
 }
@@ -302,7 +302,7 @@ label {
   .nav-list {
     position: absolute;
     right: 0px;
-    height: 100vh;
+    height: 100%;
     background-color: var(--blue);
     top: 70px;
     display: flex;
