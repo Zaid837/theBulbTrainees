@@ -1,1 +1,1 @@
-# Coming live soon 💡
+# (Now live)[https://bulbtrainees.netlify.app/] 💡
