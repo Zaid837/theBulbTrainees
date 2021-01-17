@@ -1,1 +1,2 @@
-# (Now live)[https://bulbtrainees.netlify.app/] 💡
+# Now live 👉 [💡](https://bulbtrainees.netlify.app/) 
+Click the bulb.
